@@ -1,0 +1,7 @@
+{
+  "name": "hackathon-web",
+  "version": "1.0.0",
+  "description": "Web hackathon add-on: frontend-design and Playwright MCP. Holds dependencies only.",
+  "author": { "name": "Hackathon Kit" },
+  "license": "MIT"
+}

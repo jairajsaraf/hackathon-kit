@@ -1,0 +1,7 @@
+{
+  "name": "hackathon-core",
+  "version": "1.0.0",
+  "description": "Core hackathon set: hackathon-skills, superpowers and ponytail. Holds dependencies only.",
+  "author": { "name": "Hackathon Kit" },
+  "license": "MIT"
+}

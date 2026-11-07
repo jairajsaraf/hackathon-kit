@@ -1,0 +1,8 @@
+{
+  "name": "hackathon-skills",
+  "version": "1.0.0",
+  "description": "model-advisor, session-handoff-maintenance, deepen-task and opt-in-picker for hackathon teams.",
+  "author": { "name": "Hackathon Kit" },
+  "license": "MIT",
+  "keywords": ["hackathon", "planning", "token-savings"]
+}

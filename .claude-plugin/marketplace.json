@@ -1,0 +1,49 @@
+{
+  "name": "hackathon-kit",
+  "owner": { "name": "Hackathon Kit" },
+  "description": "A small, tiered Claude Code starter set for AI, agent and data hackathons. Core is about 2k tokens always-on; everything else is opt-in.",
+  "version": "1.0.0",
+  "allowCrossMarketplaceDependenciesOn": [
+    "claude-plugins-official",
+    "ponytail",
+    "knowledge-work-plugins"
+  ],
+  "plugins": [
+    {
+      "name": "hackathon-skills",
+      "source": "./plugins/hackathon-skills",
+      "description": "Four skills: model-advisor, session-handoff-maintenance, deepen-task, opt-in-picker. No dependencies, so it also works in Claude Desktop chat and Cowork.",
+      "category": "productivity"
+    },
+    {
+      "name": "hackathon-core",
+      "source": "./plugins/hackathon-core",
+      "description": "Core set: hackathon-skills + superpowers + ponytail. Install this first.",
+      "category": "productivity",
+      "dependencies": [
+        "hackathon-skills",
+        { "name": "superpowers", "marketplace": "claude-plugins-official" },
+        { "name": "ponytail", "marketplace": "ponytail" }
+      ]
+    },
+    {
+      "name": "hackathon-web",
+      "source": "./plugins/hackathon-web",
+      "description": "Web projects: frontend-design + Playwright MCP (needs Node.js).",
+      "category": "development",
+      "dependencies": [
+        { "name": "frontend-design", "marketplace": "claude-plugins-official" },
+        { "name": "playwright", "marketplace": "claude-plugins-official" }
+      ]
+    },
+    {
+      "name": "hackathon-data",
+      "source": "./plugins/hackathon-data",
+      "description": "Data projects: Anthropic's data skills. Its bundled MCP servers need paid accounts; disable them with /mcp if you have none.",
+      "category": "data",
+      "dependencies": [
+        { "name": "data", "marketplace": "knowledge-work-plugins" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "hackathon-data",
+  "version": "1.0.0",
+  "description": "Data hackathon add-on: Anthropic's data plugin. Holds dependencies only.",
+  "author": { "name": "Hackathon Kit" },
+  "license": "MIT"
+}

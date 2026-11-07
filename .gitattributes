@@ -1,0 +1,6 @@
+# Keep shell scripts LF so `bash install.sh` works after a clone on Windows
+# (Git for Windows would otherwise convert them to CRLF and bash would fail).
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ps1 text eol=lf
